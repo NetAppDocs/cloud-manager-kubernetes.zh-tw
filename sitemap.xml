@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+    
+    
+  
+
+  
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-kubernetes/concept-kubernetes.html</loc>
+      
+      <lastmod>2022-05-03T09:40:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-kubernetes/concept-manage-k8s.html</loc>
+      
+      <lastmod>2022-05-03T09:40:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-kubernetes/</loc>
+      
+      <lastmod>2022-05-03T09:40:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-kubernetes//requirements/kubernetes-reqs-aks.html</loc>
+      
+      <lastmod>2022-05-03T09:40:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-kubernetes//requirements/kubernetes-reqs-aws.html</loc>
+      
+      <lastmod>2022-05-03T09:40:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-kubernetes//requirements/kubernetes-reqs-gke.html</loc>
+      
+      <lastmod>2022-05-03T09:40:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-kubernetes/legal-notices.html</loc>
+      
+      <lastmod>2022-05-03T09:40:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-kubernetes//search.html</loc>
+      
+      <lastmod>2022-05-03T09:41:06+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-kubernetes//support/task-get-help.html</loc>
+      
+      <lastmod>2022-05-03T09:40:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-kubernetes//task/task-k8s-manage-persistent-volumes.html</loc>
+      
+      <lastmod>2022-05-03T09:40:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-kubernetes//task/task-k8s-manage-remove-cluster.html</loc>
+      
+      <lastmod>2022-05-03T09:40:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-kubernetes//task/task-k8s-manage-storage-classes.html</loc>
+      
+      <lastmod>2022-05-03T09:40:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-kubernetes//task/task-k8s-manage-trident.html</loc>
+      
+      <lastmod>2022-05-03T09:40:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-kubernetes//task/task-k8s-quick-start.html</loc>
+      
+      <lastmod>2022-05-03T09:40:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-kubernetes//task/task-kubernetes-discover-aws.html</loc>
+      
+      <lastmod>2022-05-03T09:40:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-kubernetes//task/task-kubernetes-discover-azure.html</loc>
+      
+      <lastmod>2022-05-03T09:40:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-kubernetes//task/task-kubernetes-discover-gke.html</loc>
+      
+      <lastmod>2022-05-03T09:40:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-kubernetes//task/task-kubernetes-enable-services.html</loc>
+      
+      <lastmod>2022-05-03T09:40:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-kubernetes//support/task-support-registration.html</loc>
+      
+      <lastmod>2022-05-03T09:40:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-kubernetes/whats-new.html</loc>
+      
+      <lastmod>2022-05-03T09:40:47+00:00</lastmod>
+      
+    </url>
+  
+
+  
+  
+</urlset>
