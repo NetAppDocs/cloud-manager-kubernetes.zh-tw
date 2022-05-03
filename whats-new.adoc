@@ -1,0 +1,79 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes' 
+summary: 瞭解Cloud Manager Kubernetes的新功能。 
+---
+= Cloud Manager中Kubernetes的新功能
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+瞭解Cloud Manager Kubernetes的新功能。
+
+
+
+== 2022年4月4日
+
+
+
+=== 使用Cloud Manager資源頁面管理Kubernetes叢集
+
+Kubernetes叢集管理現在已直接從叢集工作環境增強整合功能。全新 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-quick-start.html["快速入門"] 讓您快速上線運作。
+
+您現在可以從叢集資源頁面執行下列動作。
+
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html["安裝Astra Trident"]
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html["新增儲存類別"]
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-persistent-volumes.html["檢視持續磁碟區"]
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-remove-cluster.html["移除叢集"]
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-enable-services.html["啟用資料服務"]
+
+
+
+
+== 2022年2月27日
+
+
+
+=== 支援Google Cloud中的Kubernetes叢集
+
+您現在可以使用Cloud Manager、在Google Cloud中新增及管理託管的Google Kubernetes Engine（GKE）叢集和自我管理的Kubernetes叢集。
+
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["瞭解如何在Google Cloud中開始使用Kubernetes叢集"]。
+
+
+
+== 2022年1月11日
+
+
+
+=== 支援Azure中的Kubernetes叢集
+
+您現在可以使用Cloud Manager、在Azure中新增及管理託管Azure Kubernetes叢集（KS）和自我管理的Kubernetes叢集。
+
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html["Azure中的Kubernetes叢集入門"]
+
+
+
+== 2021年11月28日
+
+
+
+=== 支援AWS中的Kubernetes叢集
+
+您現在可以將託管Kubernetes叢集新增至Cloud Manager的Canvas、以進行進階資料管理。
+
+* 探索Amazon EKS叢集
+* 使用Cloud Backup備份持續性磁碟區
+
+
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["深入瞭解Kubernetes支援"]。
+
+
+TIP: 現有的Kubernetes服務（可透過* K8s*索引標籤取得）已過時、將在未來的版本中移除。

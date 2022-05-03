@@ -1,0 +1,95 @@
+---
+sidebar: sidebar 
+permalink: /task/task-k8s-manage-storage-classes.html 
+keywords: kubernetes, k8s, add storage class, remove storage class 
+summary: 將託管Kubernetes叢集新增至Canvas之後、您可以使用Cloud Manager來管理儲存類別。 
+---
+= 管理儲存類別
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+將託管Kubernetes叢集新增至Canvas之後、您可以使用Cloud Manager來管理儲存類別。
+
+
+NOTE: 如果未定義任何儲存類別、叢集將顯示需要採取行動。
+
+
+
+== 新增儲存類別
+
+.步驟
+. 按兩下Canvas上的Kubernetes工作環境、或按一下*輸入工作環境*。
+. 確認已安裝最新四個版本的Astra Trident之一。
+. 按一下「*新增儲存類別*」來定義Kubernetes叢集的儲存類別。
++
+image:screenshot-k8s-add-storage-class.png["K8s資源頁面的快照、顯示「新增儲存類別」按鈕。"]
+
+. 提供儲存類別的名稱、選取定義選項、然後按一下*下一步*。
++
+image:screenshot-k8s-define-storage-class.png["顯示K8s儲存類別定義選項的快照。"]
+
+. 選取要連線至叢集的工作環境。按一下「 * 新增 * 」。
++
+image:screenshot-k8s-we-storage-class.png["顯示Kubernetes叢集工作環境選擇的快照。"]
+
+
+
+您可以按一下、從Kubernetes叢集的資源頁面檢視儲存類別。
+
+image:screenshot-k8s-view-storage-class.png["Kubernetes資源頁面上顯示「View Storage Class」的快照。"]
+
+
+
+== 檢視工作環境詳細資料
+
+.步驟
+. 按兩下Canvas上的Kubernetes工作環境、或按一下*輸入工作環境*。
+. 按一下「*儲存類別*」索引標籤。
+. 按一下資訊圖示以檢視工作環境的詳細資料。
+
+
+此時會開啟「工作環境詳細資料」面板。
+
+image:screenshot-k8s-info-storage-class.png["Kubernetes叢集的工作環境詳細資料快照。"]
+
+
+
+== 設定預設儲存類別
+
+.步驟
+. 按兩下Canvas上的Kubernetes工作環境、或按一下*輸入工作環境*。
+. 按一下「*儲存類別*」索引標籤。
+. 按一下儲存類別的動作功能表、然後按一下*設為預設*。
++
+image:screenshot-k8s-default-storage-class.png["設定預設儲存類別的動作功能表快照。"]
+
+
+
+選取的儲存類別設為預設值。
+
+image:screenshot-k8s-default-set-storage-class.png["顯示預設儲存類別的快照。"]
+
+
+
+== 移除儲存類別
+
+.步驟
+. 按兩下Canvas上的Kubernetes工作環境、或按一下*輸入工作環境*。
+. 按一下「*儲存類別*」索引標籤。
+. 按一下儲存類別的動作功能表、然後按一下*設為預設*。
++
+image:screenshot-k8s-remove-storage-class.png["移除儲存類別的動作功能表快照。"]
+
+. 按一下「*移除*」以確認移除儲存類別。
++
+image:screenshot-k8s-remove-confirm-storage-class.png["用於移除儲存類別的確認畫面快照。"]
+
+
+
+選取的儲存類別即會移除。

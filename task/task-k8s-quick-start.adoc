@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: /task/task-k8s-quick-start.html 
+keywords: kubernetes, persistent volumes, containers, persistent storage, kubeconfig, trident, kubernetes cluster, storage classes, classes, cvo-single, cvo-ha, thick provisioning, trident_trident, connect, disconnect, provision 
+summary: 將Kubernetes叢集新增至Cloud Manager、只需幾個快速步驟即可進行進階資料管理。 
+---
+= 開始使用Kubernetes叢集
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+將Kubernetes叢集新增至Cloud Manager、只需幾個快速步驟即可進行進階資料管理。
+
+
+
+== 快速入門
+
+請依照下列步驟快速入門。
+
+[role="quick-margin-para"]
+確保您的環境符合叢集類型的先決條件。
+
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html["AWS中Kubernetes叢集的需求"^]
+
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html["Azure中Kubernetes叢集的需求"^]
+
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud中Kubernetes叢集的需求"^]
+
+[role="quick-margin-para"]
+您可以新增Kubernetes叢集、並使用Cloud Manager將其連線至工作環境。
+
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-aws.html["新增Amazon Kubernetes叢集"^]
+
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-azure.html["新增Azure Kubernetes叢集"^]
+
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-gke.html["新增Google Cloud Kubernetes叢集"^]
+
+[role="quick-margin-para"]
+使用原生 Kubernetes 介面和架構來要求及管理持續磁碟區。Cloud Manager 會建立 NFS 和 iSCSI 儲存類別、供您在配置持續磁碟區時使用。
+
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-postdeployment.html#step-3-provision-your-first-volume["深入瞭解Astra Trident的第一個磁碟區資源配置"^]。
+
+[role="quick-margin-para"]
+將Kubernetes叢集新增至Cloud Manager之後、即可從Cloud Manager資源頁面管理叢集。
+
+[role="quick-margin-para"]
+link:task-k8s-manage-trident.html["瞭解如何管理Kubernetes叢集。"]

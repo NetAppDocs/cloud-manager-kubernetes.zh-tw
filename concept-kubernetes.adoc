@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: concept-kubernetes.html 
+keywords: kubernetes, k8s, back up kubernetes, back up k8s, discover kubernetes cluster, discover k8s, amazon eks, eks, azure, aks, back up persistent volumes, persistent volumes, kubernetes support 
+summary: Astra Trident是由NetApp維護的完全支援開放原始碼專案。Astra Trident與Kubernetes及其持續Volume架構原生整合、可從執行任何NetApp儲存平台組合的系統無縫配置及管理Volume。 
+---
+= Kubernetes的Cloud Manager資料管理功能
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Astra Trident是由NetApp維護的完全支援開放原始碼專案。Astra Trident與Kubernetes及其持續Volume架構原生整合、可從執行任何NetApp儲存平台組合的系統無縫配置及管理Volume。 link:https://docs.netapp.com/us-en/trident/index.html["深入瞭解 Trident"^]。
+
+
+
+== 功能
+
+您可以使用Cloud Manager直接管理Kubernetes叢集。
+
+* 安裝Astra Trident。
+* 新增及管理叢集、做為混合雲基礎架構的一部分。
+* 新增及管理儲存類別、並將其連線至工作環境。
+* 使用Cloud Backup Service 還原備份持續的Volume。
+
+
+
+
+== 支援的Kubernetes部署
+
+Cloud Manager支援在下列環境中執行的託管Kubernetes叢集：
+
+* link:/requirements/kubernetes-reqs-aws.html["Amazon Elastic Kubernetes服務（Amazon EKS）"]
+* link:/requirements/kubernetes-reqs-aks.html["Microsoft Azure Kubernetes服務（英文）"]
+* link:/requirements/kubernetes-reqs-gke.html["Google Kubernetes Engine（GKE）"]
+
+
+
+
+== 支援的Astra Trident部署
+
+需要最新版Astra Trident的四種版本之一。您可以直接從Cloud Manager安裝Astra Trident。您應該 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["檢閱先決條件"^] 安裝之前。
+
+若要升級Astra Trident、 link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/upgrade-operator.html["與營運者一起升級"^]。
+
+
+
+== 支援的後端儲存設備
+
+NetApp的Astra Trident必須安裝在每個Kubernetes叢集上、Cloud Volumes ONTAP 而且必須將其設定為叢集的後端儲存設備。
+
+
+
+== 成本
+
+在Cloud Manager中探索Kubernetes叢集並不收費、但當您使用Cloud Backup Service 支援功能來備份持續的Volume時、系統將會收取您的費用。

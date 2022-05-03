@@ -1,0 +1,68 @@
+---
+sidebar: sidebar 
+permalink: /task/task-kubernetes-discover-azure.html 
+keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, import kubernetes cluster, azure, aks, kubernetes support 
+summary: 將Kubernetes叢集新增至Cloud Manager、以便開始將持續磁碟區備份至Azure。 
+---
+= 將Azure Kubernetes叢集新增至Cloud Manager
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將Kubernetes叢集探索或匯入Cloud Manager、以便將持續的Volume備份到Azure。
+
+
+
+== 探索叢集
+
+您可以探索完全託管或自我管理的Kubernetes叢集。必須探索託管叢集、無法匯入。
+
+.步驟
+. 在* Canvas*上、按一下*新增工作環境*。
+. 選取* Microsoft Azure *>* Kubernetes Cluster*、然後按一下* Next*。
++
+image:screenshot-discover-kubernetes-aks.png["「新增工作環境」頁面的快照、顯示所選的Microsoft Azure和Kubernetes叢集。"]
+
+. 選擇* Discover Cluster*（探索叢集）、然後按* Next*（下一步*）。
+. 選取Kubernetes叢集、然後按一下*「下一步*」。
++
+image:screenshot-k8s-aks-discover.png["「Discover a Kubernetes Cluster」（探索Kubernetes叢集）頁面的快照、顯示選取的Kubernetes叢集。"]
+
+
+
+Cloud Manager會將Kubernetes叢集新增至Canvas.
+
+image:screenshot-k8s-aks-canvas.png["Cloud Manager中的Canvases快照、顯示Kubernetes叢集。"]
+
+
+
+== 匯入叢集
+
+您可以使用Kubernetes組態檔匯入自我管理的Kubernetes叢集。
+
+
+
+== 開始之前
+
+您需要叢集角色Yaml檔案中指定的使用者的憑證授權單位、用戶端金鑰和用戶端憑證憑證、才能匯入Kubernetes叢集。Kubernetes叢集管理員在Kubernetes叢集上建立使用者時、會收到這些認證。
+
+.步驟
+. 在* Canvas*上、按一下*新增工作環境*。
+. 選取* Microsoft Azure *>* Kubernetes Cluster*、然後按一下* Next*。
+. 選取*匯入叢集*、然後按一下*下一步*。
+. 上傳Yaml格式的Kubernetes組態檔案。
++
+image:screenshot-k8s-aks-import-1.png["匯入Kubernetes叢集頁面的快照、內含組態檔和可用叢集表格。"]
+
+. 上傳Kubernetes叢集管理員提供的叢集憑證。
++
+image:screenshot-k8s-aks-import-2.png["用於上傳「憑證授權單位」、「用戶端金鑰」和「用戶端憑證」憑證的叢集憑證頁面快照。"]
+
+
+
+Cloud Manager會將Kubernetes叢集新增至Canvas.

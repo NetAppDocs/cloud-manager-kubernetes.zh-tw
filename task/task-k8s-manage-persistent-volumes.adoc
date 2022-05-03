@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: /task/task-k8s-manage-persistent-volumes.html 
+keywords: kubernetes, k8s, view persistent volume 
+summary: 將託管Kubernetes叢集新增至Canvases之後、您可以使用Cloud Manager來檢視連接的持續磁碟區。 
+---
+= 檢視持續磁碟區
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+將託管Kubernetes叢集新增至Canvases之後、您可以使用Cloud Manager來檢視持續的Volume。
+
+.步驟
+. 按兩下Canvas上的Kubernetes工作環境、或按一下*輸入工作環境*。
+. 按一下「*總覽*」標籤中的「*檢視磁碟區*」、或按一下「*持續磁碟區*」標籤。如果未設定任何持續磁碟區、請參閱 link:https://docs.netapp.com/us-en/trident/trident-concepts/provisioning.html["資源配置"^] 如需Astra Trident中資源配置磁碟區的詳細資訊、
+
+
+此時會顯示已設定的持續磁碟區表格。
+
+image:screenshot-k8s-volume-table.png["持續磁碟區表格的快照。"]

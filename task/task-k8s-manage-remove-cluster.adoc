@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: /task/task-k8s-manage-remove-cluster.html 
+keywords: kubernetes, k8s, remove cluster 
+summary: 將託管Kubernetes叢集新增至Canvas之後、您可以使用Cloud Manager從工作區移除叢集。 
+---
+= 從工作區移除Kubernetes叢集
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+將託管Kubernetes叢集新增至Canvas之後、您可以使用Cloud Manager從工作區移除叢集。
+
+.步驟
+. 按兩下Canvas上的Kubernetes工作環境、或按一下*輸入工作環境*。
+. 在頁面右上角、選取「動作」功能表、然後按一下「*從工作區移除*」。
++
+image:screenshot-k8s-remove-cluster.png["顯示功能表的快照、可從工作區移除Kubernetes叢集。"]
+
+. 按一下「*移除*」以確認從工作區移除叢集。您可以隨時重新探索此叢集。
++
+image:screenshot-k8s-confirm-remove-cluster.png["確認從工作區移除Kubernetes叢集的頁面快照。"]
+
+
+
+Kubernetes叢集會從工作區中移除、且在Canvas上不再顯示。

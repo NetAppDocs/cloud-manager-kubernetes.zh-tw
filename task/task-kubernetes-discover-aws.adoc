@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: /task/task-kubernetes-discover-aws.html 
+keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, amazon eks, eks, kubernetes support, import kubernetes cluster, import, amazon s3, amazon, aws 
+summary: 將Amazon Elastic Kubernetes Service（Amazon EKS）叢集新增至Cloud Manager、以便開始將持續磁碟區備份至Amazon S3。 
+---
+= 將Amazon Kubernetes叢集新增至Cloud Manager
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將Kubernetes叢集探索或匯入Cloud Manager、以便將持續的磁碟區備份到Amazon S3。
+
+
+
+== 探索叢集
+
+您可以探索完全託管或自我管理的Kubernetes叢集。必須探索託管叢集、無法匯入。
+
+.步驟
+. 在* Canvas*上、按一下*新增工作環境*。
+. 選取* Amazon Web Services*>* Kubernetes Cluster*、然後按一下* Next*。
++
+image:screenshot-discover-kubernetes-aws-1.png["「Discover a Kubernetes Cluster」（探索Kubernetes叢集）頁面的快照、顯示選取的AWS區域和Kubernetes叢集。"]
+
+. 選擇* Discover Cluster*（探索叢集）、然後按* Next*（下一步*）。
+. 選擇AWS區域、選取Kubernetes叢集、然後按一下「*下一步*」。
++
+image:screenshot-discover-kubernetes-aws-2.png["「Discover a Kubernetes Cluster」（探索Kubernetes叢集）頁面的快照、顯示選取的AWS區域和Kubernetes叢集。"]
+
+
+
+Cloud Manager會將Kubernetes叢集新增至Canvas.
+
+image:screenshot-kubernetes-canvas.png["Cloud Manager中的Canvases快照、顯示Kubernetes叢集。"]
+
+
+
+== 匯入叢集
+
+您可以使用Kubernetes組態檔匯入自我管理的Kubernetes叢集。
+
+.步驟
+. 在* Canvas*上、按一下*新增工作環境*。
+. 選取* Amazon Web Services*>* Kubernetes Cluster*、然後按一下* Next*。
+. 選取*匯入叢集*、然後按一下*下一步*。
+. 上傳Yaml格式的Kubernetes組態檔案。
++
+image:screenshot-k8s-aks-import-1.png["匯入Kubernetes叢集頁面的快照、內含組態檔和可用叢集表格。"]
+
+. 選取Kubernetes叢集、然後按一下*下一步*。
+
+
+Cloud Manager會將Kubernetes叢集新增至Canvas.

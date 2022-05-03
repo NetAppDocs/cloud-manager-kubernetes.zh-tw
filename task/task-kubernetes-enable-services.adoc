@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: /task/task-kubernetes-enable-services.html 
+keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, amazon eks, eks, kubernetes support 
+summary: 將託管Kubernetes叢集新增至Canvases之後、您可以使用NetApp雲端資料服務來進行進階資料管理。 
+---
+= 將NetApp雲端資料服務與Kubernetes叢集搭配使用
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+將託管Kubernetes叢集新增至Canvases之後、您可以使用NetApp雲端資料服務來進行進階資料管理。
+
+目前、Kubernetes叢集支援Cloud Backup。您可以使用Cloud Backup將持續磁碟區備份到物件儲存設備。
+
+link:https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-kubernetes-backup-to-cloud.html["瞭解如何使用Cloud Backup保護Kubernetes叢集資料"^]。
+
+image:screenshot-kubernetes-backup.png["此頁面的快照Cloud Backup Service 顯示了Kubernetes叢集的五個備份工作。"]

@@ -1,0 +1,68 @@
+---
+sidebar: sidebar 
+permalink: /task/task-kubernetes-discover-gke.html 
+keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, import kubernetes cluster, google, google cloud, gke, kubernetes support 
+summary: 您可以將Kubernetes叢集探索或匯入Cloud Manager、以便將持續的磁碟區備份到Google Cloud。 
+---
+= 將Google Cloud Kubernetes叢集新增至Cloud Manager
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將Kubernetes叢集探索或匯入Cloud Manager、以便將持續的磁碟區備份到Google Cloud。
+
+
+
+== 探索叢集
+
+您可以探索完全託管或自我管理的Kubernetes叢集。必須探索託管叢集、無法匯入。
+
+.步驟
+. 在* Canvas*上、按一下*新增工作環境*。
+. 選擇* Google Cloud Platform*>* Kubernetes Cluster*、然後按一下* Next*。
++
+image:screenshot-discover-kubernetes-gke.png["「新增工作環境」頁面的快照、顯示所選的Google Cloud Platform和Kubernetes叢集。"]
+
+. 選擇* Discover Cluster*（探索叢集）、然後按* Next*（下一步*）。
+. 若要在不同的Google Cloud Project中選取Kubernetes叢集、請按一下*編輯專案*、然後選擇可用的專案。
++
+image:screenshot-k8s-gke-change-project.png["「編輯」專案頁面的快照、顯示可用的Google Cloud專案下拉式清單。"]
+
+. 選取Kubernetes叢集、然後按一下*「下一步*」。
++
+image:screenshot-k8s-gke-discover.png["「Discover a Kubernetes Cluster」（探索Kubernetes叢集）頁面的快照、顯示選取的Kubernetes叢集。"]
+
+
+
+Cloud Manager會將Kubernetes叢集新增至Canvas.
+
+image:screenshot-k8s-gke-canvas.png["Cloud Manager中的Canvases快照、顯示Kubernetes叢集。"]
+
+
+
+== 匯入叢集
+
+您可以使用Kubernetes組態檔匯入自我管理的Kubernetes叢集。
+
+
+
+== 開始之前
+
+您需要叢集角色Yaml檔案中指定的使用者的憑證授權單位、用戶端金鑰和用戶端憑證憑證、才能匯入Kubernetes叢集。Kubernetes叢集管理員在Kubernetes叢集上建立使用者時、會收到這些認證。
+
+.步驟
+. 在* Canvas*上、按一下*新增工作環境*。
+. 選擇* Google Cloud Platform*>* Kubernetes Cluster*、然後按一下* Next*。
+. 選取*匯入叢集*、然後按一下*下一步*。
+. 上傳Yaml格式的Kubernetes組態檔案。
++
+image:screenshot-k8s-gke-import-1.png["匯入Kubernetes叢集頁面的快照、內含組態檔和可用叢集表格。"]
+
+
+
+Cloud Manager會將Kubernetes叢集新增至Canvas.

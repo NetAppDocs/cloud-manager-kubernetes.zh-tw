@@ -1,0 +1,280 @@
+---
+sidebar: sidebar 
+permalink: /requirements/kubernetes-reqs-gke.html 
+keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, google, google cloud, gke, kubernetes support 
+summary: 您可以使用Cloud Manager在Google中新增及管理託管的Google Kubernetes Engine叢集（GKE）和自我管理的Kubernetes叢集。在將叢集新增至Cloud Manager之前、請先確保符合下列需求。 
+---
+= Google Cloud中Kubernetes叢集的需求
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用Cloud Manager、在Google中新增及管理託管的Google Kubernetes Engine（GKE）叢集和自我管理的Kubernetes叢集。在將叢集新增至Cloud Manager之前、請先確保符合下列需求。
+
+
+NOTE: 本主題使用_Kubernetes叢集_、其中GKE和自我管理Kubernetes叢集的組態相同。叢集類型是在組態不同的地方指定。
+
+
+
+== 需求
+
+Astra Trident:: 需要最新版Astra Trident的四種版本之一。您可以直接從Cloud Manager安裝Astra Trident。您應該 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["檢閱先決條件"^] 安裝Astra Trident之前
+
+
+若要升級Astra Trident、 link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/upgrade-operator.html["與營運者一起升級"^]。
+
+Cloud Volumes ONTAP:: 在Cloud Manager中、必須使用與Kubernetes叢集相同的租戶帳戶、工作區和Connector。Cloud Volumes ONTAP https://docs.netapp.com/us-en/trident/trident-use/backends.html["如需組態步驟、請前往Astra Trident文件"^]。
+Cloud Manager Connector:: Connector必須以必要權限在Google中執行。 <<Prepare a Connector,深入瞭解>>。
+網路連線能力:: Kubernetes叢集和Connector之間、以及Kubernetes叢集和Cloud Volumes ONTAP 整個過程之間、都需要網路連線。 <<Review networking requirements,深入瞭解>>。
+RBAC授權:: Cloud Manager支援啟用RBAC的叢集、可搭配或不使用Active Directory。Cloud Manager Connector角色必須在每個GKE叢集上獲得授權。 <<Set up RBAC authorization,深入瞭解>>。
+
+
+
+
+== 準備連接器
+
+Google需要Cloud Manager Connector來探索及管理Kubernetes叢集。您需要建立新的Connector、或是使用具有所需權限的現有Connector。
+
+
+
+=== 建立新的Connector
+
+請遵循下列其中一個連結中的步驟。
+
+* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["從Cloud Manager建立Connector"^] （建議）
+* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["在現有的Linux主機上安裝Connector"^]
+
+
+
+
+=== 將必要權限新增至現有的Connector（以探索託管GKE叢集）
+
+如果您想要探索託管的GKE叢集、可能需要修改Connector的自訂角色、以提供權限。
+
+.步驟
+. 在中 link:https://console.cloud.google.com["雲端主控台"^]請移至*角色*頁面。
+. 使用頁面頂端的下拉式清單、選取包含您要編輯之角色的專案或組織。
+. 按一下自訂角色。
+. 按一下*編輯角色*以更新角色的權限。
+. 按一下「*新增權限*」、將下列新權限新增至角色。
++
+[source, json]
+----
+container.clusters.get
+container.clusters.list
+----
+. 按一下「*更新*」以儲存編輯過的角色。
+
+
+
+
+== 檢閱網路需求
+
+您需要在Kubernetes叢集與Connector之間、以及Kubernetes叢集與Cloud Volumes ONTAP 為叢集提供後端儲存功能的支援系統之間、提供網路連線。
+
+* 每個Kubernetes叢集都必須有來自Connector的傳入連線
+* 連接器必須透過連接埠443連線至每個Kubernetes叢集
+
+
+提供這種連線能力的最簡單方法、就是將Connector和Cloud Volumes ONTAP Sfor部署在Kubernetes叢集所在的VPC上。否則、您需要在不同VPC之間設定對等連線。
+
+以下範例顯示同一VPC中的每個元件。
+
+image:diagram-kubernetes-google-cloud.png["這是一張關於使用者Kubernetes叢集的架構圖表、以及它與Cloud Volumes ONTAP 相同VPC中的連接器和鏈接器的連線。"]
+
+
+
+== 設定RBAC授權
+
+RBAC驗證只會在啟用Active Directory（AD）的Kubernetes叢集上執行。未使用AD的Kubernetes叢集將自動通過驗證。
+
+您需要在每個Kubernetes叢集上授權Connector角色、以便Connector探索及管理叢集。
+
+備份與還原:: 備份與還原僅需基本授權。
+新增儲存類別:: 若要使用Cloud Manager新增儲存類別、則需要擴大授權。
+安裝Astra Trident:: 您必須提供Cloud Manager完整授權、才能安裝Astra Trident。
++
+--
+
+NOTE: 安裝Astra Trident時、Cloud Manager會安裝Astra Trident後端和Kubernetes機密、其中包含Astra Trident與儲存叢集通訊所需的認證資料。
+
+--
+
+
+若要在Y反 洗錢檔案中設定「Subtams：name:」、您必須知道Cloud Manager的唯一ID。
+
+您可以透過下列兩種方式找到唯一ID：
+
+* 使用命令：
++
+[source, JSON]
+----
+gcloud iam service-accounts list
+gcloud iam service-accounts describe <service-account-email>
+----
+* 在的「服務帳戶詳細資料」中 link:https://console.cloud.google.com["雲端主控台"^]。
++
+image:screenshot-gke-unique-id.png["Cloud Console中服務帳戶詳細資料的快照。"]
+
+
+
+建立叢集角色和角色繫結。
+
+. 根據您的授權要求、建立包含下列文字的Y反 洗錢檔案。使用您的使用者名稱取代「子項目：種類：」變數、並以授權服務帳戶的唯一ID取代「子項目：使用者：」。
++
+[role="tabbed-block"]
+====
+.備份/還原
+--
+新增基本授權以啟用Kubernetes叢集的備份與還原。
+
+[source, yaml]
+----
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+    name: cloudmanager-access-clusterrole
+rules:
+    - apiGroups:
+          - ''
+      resources:
+          - namespaces
+      verbs:
+          - list
+    - apiGroups:
+          - ''
+      resources:
+          - persistentvolumes
+      verbs:
+          - list
+    - apiGroups:
+          - ''
+      resources:
+          - pods
+          - pods/exec
+      verbs:
+          - get
+          - list
+    - apiGroups:
+          - ''
+      resources:
+          - persistentvolumeclaims
+      verbs:
+          - list
+          - create
+    - apiGroups:
+          - storage.k8s.io
+      resources:
+          - storageclasses
+      verbs:
+          - list
+    - apiGroups:
+          - trident.netapp.io
+      resources:
+          - tridentbackends
+      verbs:
+          - list
+    - apiGroups:
+          - trident.netapp.io
+      resources:
+          - tridentorchestrators
+      verbs:
+          - get
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+    name: k8s-access-binding
+subjects:
+    - kind: User
+      name:
+      apiGroup: rbac.authorization.k8s.io
+roleRef:
+    kind: ClusterRole
+    name: cloudmanager-access-clusterrole
+    apiGroup: rbac.authorization.k8s.io
+----
+--
+.儲存類別
+--
+新增擴充授權、以使用Cloud Manager新增儲存類別。
+
+[source, yaml]
+----
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+    name: cloudmanager-access-clusterrole
+rules:
+    - apiGroups:
+          - ''
+      resources:
+          - secrets
+          - namespaces
+          - persistentvolumeclaims
+          - persistentvolumes
+          - pods
+          - pods/exec
+      verbs:
+          - get
+          - list
+          - create
+          - delete
+    - apiGroups:
+          - storage.k8s.io
+      resources:
+          - storageclasses
+      verbs:
+          - get
+          - create
+          - list
+          - delete
+          - patch
+    - apiGroups:
+          - trident.netapp.io
+      resources:
+          - tridentbackends
+          - tridentorchestrators
+          - tridentbackendconfigs
+      verbs:
+          - get
+          - list
+          - create
+          - delete
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+    name: k8s-access-binding
+subjects:
+    - kind: User
+      name:
+      apiGroup: rbac.authorization.k8s.io
+roleRef:
+    kind: ClusterRole
+    name: cloudmanager-access-clusterrole
+    apiGroup: rbac.authorization.k8s.io
+----
+--
+.安裝Trident
+--
+使用命令列提供完整授權、並讓Cloud Manager安裝Astra Trident。
+
+[source, cli]
+----
+kubectl create clusterrolebinding test --clusterrole cluster-admin --user <Unique ID>
+----
+--
+====
+. 將組態套用至叢集。
++
+[source, kubectl]
+----
+kubectl apply -f <file-name>
+----
+

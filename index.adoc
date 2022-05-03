@@ -1,0 +1,16 @@
+---
+layout: astra 
+sidebar: sidebar 
+permalink: index.html 
+lead: Add your managed-Kubernetes clusters to Cloud Manager for advanced data management. 
+summary: 將您的託管Kubernetes叢集新增至Cloud Manager、以進行進階資料管理。 
+---
+= Kubernetes叢集文件
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
