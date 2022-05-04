@@ -18,6 +18,18 @@ summary: 瞭解Cloud Manager Kubernetes的新功能。
 
 
 
+== 2022年5月8日
+
+
+
+=== 拖放以新增儲存類別
+
+您現在可以將Kubernetes叢集拖放到Cloud Volumes ONTAP 運作環境中、直接從Canvas.新增儲存類別。
+
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["新增儲存類別"]
+
+
+
 == 2022年4月4日
 
 
