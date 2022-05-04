@@ -18,7 +18,7 @@ summary: 瞭解Cloud Manager Kubernetes的新功能。
 
 
 
-== 2022年5月8日
+== 2022年5月4日
 
 
 

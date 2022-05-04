@@ -435,11 +435,11 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp社群</block>
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central部落格</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">雲端網路研討會</block>
-  <block id="f03623a9e2b73dcb7ae9b7b837190c39" category="section-title">2022年5月8日</block>
   <block id="6401d12bcac1f01899ab494a0a6d8edb" category="section-title">拖放以新增儲存類別</block>
   <block id="0f808082ee99c2acfbcb1661162034f6" category="paragraph">您現在可以將Kubernetes叢集拖放到Cloud Volumes ONTAP 運作環境中、直接從Canvas.新增儲存類別。</block>
   <block id="d23895cd28f2e8e5d3074279cea7aacf" category="inline-link-macro">新增儲存類別</block>
   <block id="2556925e0b340fdd647987c6af7fbee9" category="paragraph"><block ref="2556925e0b340fdd647987c6af7fbee9" category="inline-link-macro-rx"></block></block>
   <block id="1eec33c68401a6eebb58a392153f045b" category="admonition">如果未定義儲存類別、叢集將顯示需要採取行動。按兩下Canvas上的叢集、將會開啟動作頁面以新增儲存類別。</block>
   <block id="a5cc9f7714a0767ece3c08caff06314d" category="list-text">從「畫版」中、將Kubernetes工作環境拖放到Cloud Volumes ONTAP 「支援」工作環境中、以開啟儲存類別精靈。</block>
+  <block id="19f4ed17c6ec00f67063b70e40bfc661" category="section-title">2022年5月4日</block>
 </blocks>
