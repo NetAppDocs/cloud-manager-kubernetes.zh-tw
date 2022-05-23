@@ -34,9 +34,9 @@ Astra Trident是由NetApp維護的完全支援開放原始碼專案。Astra Trid
 
 Cloud Manager支援在下列環境中執行的託管Kubernetes叢集：
 
-* link:../requirements/kubernetes-reqs-aws.html["Amazon Elastic Kubernetes服務（Amazon EKS）"]
-* link:../requirements/kubernetes-reqs-aks.html["Microsoft Azure Kubernetes服務（英文）"]
-* link:../requirements/kubernetes-reqs-gke.html["Google Kubernetes Engine（GKE）"]
+* link:/requirements/kubernetes-reqs-aws.html["Amazon Elastic Kubernetes服務（Amazon EKS）"]
+* link:/requirements/kubernetes-reqs-aks.html["Microsoft Azure Kubernetes服務（英文）"]
+* link:/requirements/kubernetes-reqs-gke.html["Google Kubernetes Engine（GKE）"]
 
 
 
