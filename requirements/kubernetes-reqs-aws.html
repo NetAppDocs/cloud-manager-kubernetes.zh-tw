@@ -691,7 +691,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 09:40:47 +0000">05/03/2022</time>
+    <time datetime="2022-06-01 18:43:54 +0000">06/01/2022</time>
     
   
 
@@ -1075,14 +1075,62 @@ roleRef:
 </div>
 </li>
 <li>
-<p>使用「ekscll」建立權限群組的身分識別對應。以下為範例。</p>
+<p>建立權限群組的身分識別對應。</p>
+<div class="exampleblock tabbed-block">
+<div class="content">
+<div class="openblock">
+<div class="title">使用ekscl</div>
+<div class="content">
+<div class="paragraph">
+<p>使用eksctl在叢集與Cloud Manager Connector的IAM角色之間建立IAM身分識別對應。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://eksctl.io/usage/iam-identity-mappings/" target="_blank" rel="noopener">"如需完整說明、請參閱eksctl文件"</a>。</p>
+</div>
+<div class="paragraph">
+<p>以下為範例。</p>
+</div>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-eksctl" data-lang="eksctl">eksctl create iamidentitymapping --cluster &lt;eksCluster&gt; --region &lt;us-east-2&gt; --arn &lt;ARN of the Connector IAM role&gt; --group cloudmanager-access-group --username system:node:{{EC2PrivateDNSName}}</code></pre>
 </div>
 </div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">編輯AWS/AUTH</div>
+<div class="content">
 <div class="paragraph">
-<p><a href="https://eksctl.io/usage/iam-identity-mappings/" target="_blank" rel="noopener">"如需完整說明、請參閱eksctl文件"</a>。</p>
+<p>直接編輯AWS/AUTH ConfigMap、將RBAC存取權限新增至Cloud Manager Connector的IAM角色。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/add-user-role.html" target="_blank" rel="noopener">"如需完整指示、請參閱AWS EKS文件"</a>。</p>
+</div>
+<div class="paragraph">
+<p>以下為範例。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">apiVersion: v1
+data:
+  mapRoles: |
+    - groups:
+      - cloudmanager-access-group
+      rolearn: &lt;ARN of the Connector IAM role&gt;
+     username: system:node:{{EC2PrivateDNSName}}
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-09-30T21:09:18Z"
+  name: aws-auth
+  namespace: kube-system
+  resourceVersion: "1021"
+  selfLink: /api/v1/namespaces/kube-system/configmaps/aws-auth
+  uid: dcc31de5-3838-11e8-af26-02e00430057c</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </li>
 </ol>
