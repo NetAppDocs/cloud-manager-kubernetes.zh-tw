@@ -277,13 +277,49 @@ kubectl apply -f <file-name>
 ----
 
 
-. 使用「ekscll」建立權限群組的身分識別對應。以下為範例。
+. 建立權限群組的身分識別對應。
 +
+[role="tabbed-block"]
+====
+.使用ekscl
+--
+使用eksctl在叢集與Cloud Manager Connector的IAM角色之間建立IAM身分識別對應。
+
+https://eksctl.io/usage/iam-identity-mappings/["如需完整說明、請參閱eksctl文件"^]。
+
+以下為範例。
+
 [source, eksctl]
 ----
 eksctl create iamidentitymapping --cluster <eksCluster> --region <us-east-2> --arn <ARN of the Connector IAM role> --group cloudmanager-access-group --username system:node:{{EC2PrivateDNSName}}
 ----
-+
-https://eksctl.io/usage/iam-identity-mappings/["如需完整說明、請參閱eksctl文件"^]。
+--
+.編輯AWS/AUTH
+--
+直接編輯AWS/AUTH ConfigMap、將RBAC存取權限新增至Cloud Manager Connector的IAM角色。
 
+https://docs.aws.amazon.com/eks/latest/userguide/add-user-role.html["如需完整指示、請參閱AWS EKS文件"^]。
+
+以下為範例。
+
+[source, yaml]
+----
+apiVersion: v1
+data:
+  mapRoles: |
+    - groups:
+      - cloudmanager-access-group
+      rolearn: <ARN of the Connector IAM role>
+     username: system:node:{{EC2PrivateDNSName}}
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-09-30T21:09:18Z"
+  name: aws-auth
+  namespace: kube-system
+  resourceVersion: "1021"
+  selfLink: /api/v1/namespaces/kube-system/configmaps/aws-auth
+  uid: dcc31de5-3838-11e8-af26-02e00430057c
+----
+--
+====
 

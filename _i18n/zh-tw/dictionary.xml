@@ -238,7 +238,6 @@
   <block id="3af3ead39a5eec5783d926f19a9b6bfe" category="paragraph">您需要在每個Kubernetes叢集上授權Connector角色、以便Connector能夠探索及管理叢集。</block>
   <block id="d1c51ee4ad82e26c7069e126c0a5d25d" category="paragraph">需要不同的授權才能啟用不同的功能。</block>
   <block id="12fb6938fb90a471014c2abce44ca15b" category="list-text">根據您的授權要求、建立包含下列文字的Y反 洗錢檔案。</block>
-  <block id="e4e88e99e021b78e80ca0c688485ea20" category="list-text">使用「ekscll」建立權限群組的身分識別對應。以下為範例。</block>
   <block id="836c1d30babd0339206570a66bcbb4f3" category="inline-link">如需完整說明、請參閱eksctl文件</block>
   <block id="1e37bf365a6041e37e34936645ebc0a8" category="paragraph"><block ref="1119b51b5b352ff18c686869eb8e6d24" category="inline-link-rx"></block>。</block>
   <block id="59926e95a1273af1eff3f3a8847d1286" category="summary">您可以使用Cloud Manager、在Azure中新增及管理託管Azure Kubernetes叢集（KS）和自我管理的Kubernetes叢集。在將叢集新增至Cloud Manager之前、請先確保符合下列需求。</block>
@@ -442,4 +441,12 @@
   <block id="79ee39f20c9b076e39473401e33c5f12" category="list-text"><block ref="79ee39f20c9b076e39473401e33c5f12" category="inline-link-macro-rx"></block></block>
   <block id="df02ebf4bbdbd23dcf4001f89e193718" category="list-text"><block ref="df02ebf4bbdbd23dcf4001f89e193718" category="inline-link-macro-rx"></block></block>
   <block id="0d66e7de3df254882c2f4ec49e44ba2f" category="list-text"><block ref="0d66e7de3df254882c2f4ec49e44ba2f" category="inline-link-macro-rx"></block></block>
+  <block id="f08cfbb10dc9216a72c9d59da3c626b8" category="list-text">建立權限群組的身分識別對應。</block>
+  <block id="bcac99b7c9956d05f17a4e4f9649da71" category="open-title">使用ekscl</block>
+  <block id="f7e12246f1ebd24c7f1a6460919e9bd3" category="paragraph">使用eksctl在叢集與Cloud Manager Connector的IAM角色之間建立IAM身分識別對應。</block>
+  <block id="13225b5885ac45d1b5d3019c9de2e513" category="paragraph">以下為範例。</block>
+  <block id="a36cee8f656cd9e61ae5593885084071" category="open-title">編輯AWS/AUTH</block>
+  <block id="de4e940a00cd2a48720f3f12fb53e9a7" category="paragraph">直接編輯AWS/AUTH ConfigMap、將RBAC存取權限新增至Cloud Manager Connector的IAM角色。</block>
+  <block id="434f77de052a92ee529d95ba80f3bab4" category="inline-link">如需完整指示、請參閱AWS EKS文件</block>
+  <block id="05dcb2fa0de0a4549322d783d2f5e5fb" category="paragraph"><block ref="7af1dbb48bd59e8f995e1a97be9e70f8" category="inline-link-rx"></block>。</block>
 </blocks>
