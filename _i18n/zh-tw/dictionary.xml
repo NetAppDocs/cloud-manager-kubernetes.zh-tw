@@ -295,7 +295,6 @@
   <block id="2204d229f6006a328688918431aab2cf" category="paragraph"><block ref="2204d229f6006a328688918431aab2cf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="46213c151b950647dd4e20d3c0e13222" category="list-text">選取要連線至叢集的工作環境。按一下「 * 新增 * 」。</block>
   <block id="e0c9fa0852fea63dc1167ab3f2b85fb4" category="inline-image-macro">顯示Kubernetes叢集工作環境選擇的快照。</block>
-  <block id="f99a712980063704c4a584a6683234a2" category="paragraph"><block ref="f99a712980063704c4a584a6683234a2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6f78048f5e23feba1c2dfeeb70958d2b" category="paragraph">您可以按一下、從Kubernetes叢集的資源頁面檢視儲存類別。</block>
   <block id="24d4e555e1f7b6ed662909980cd4b88c" category="inline-image-macro">Kubernetes資源頁面上顯示「View Storage Class」的快照。</block>
   <block id="a770b061844a8f658a79e0452983186e" category="paragraph"><block ref="a770b061844a8f658a79e0452983186e" category="inline-image-macro-rx" type="image"></block></block>
@@ -339,7 +338,6 @@
   <block id="7f502b44c9ac6d1d030af7019328b0f2" category="inline-link-macro">瞭解如何使用Cloud Backup保護Kubernetes叢集資料</block>
   <block id="608303aeee3cf05fa80edbe0bfe6fa7f" category="paragraph"><block ref="6bac3e672a275b3f2755f168dc31fbab" category="inline-link-macro-rx"></block>。</block>
   <block id="a0d9f3ae32f1b7df23e0071308b6cbe5" category="inline-image-macro">此頁面的快照Cloud Backup Service 顯示了Kubernetes叢集的五個備份工作。</block>
-  <block id="fdd5390b518e6b0ee63a9f6d25352e4d" category="paragraph"><block ref="fdd5390b518e6b0ee63a9f6d25352e4d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c29e915557a348fe22a7fb87b99ff164" category="summary">您可以將Kubernetes叢集探索或匯入Cloud Manager、以便將持續的磁碟區備份到Google Cloud。</block>
   <block id="89e17d8d32acec475487fb1bd16fe4b8" category="doc">將Google Cloud Kubernetes叢集新增至Cloud Manager</block>
   <block id="381ebbd947b85d55ba63ca069f4fd6e2" category="section-title">探索叢集</block>
@@ -462,4 +460,6 @@
   <block id="879701946bb2bc7241d0f85fd843455a" category="paragraph">endif::azure[]</block>
   <block id="6e1e9c83b80f4d22d34cbdf60a71383b" category="paragraph">ifdef::gcp[]</block>
   <block id="310c228207a0f8446bbe4c5d16978cb7" category="paragraph">endif::gcp[]</block>
+  <block id="9caa4ae51ebcef018806ad6f192f8ff2" category="paragraph"><block ref="9caa4ae51ebcef018806ad6f192f8ff2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8fe98c5be333c8d7ddf225ff536de10d" category="paragraph"><block ref="8fe98c5be333c8d7ddf225ff536de10d" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

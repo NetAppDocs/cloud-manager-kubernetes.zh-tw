@@ -31,7 +31,7 @@ image:screenshot-k8s-define-storage-class.png["顯示K8s儲存類別定義選項
 
 . 選取要連線至叢集的工作環境。按一下「 * 新增 * 」。
 +
-image:screenshot-k8s-we-storage-class.png["顯示Kubernetes叢集工作環境選擇的快照。"]
+image:screenshot-k8s-select-storage-class.png["顯示Kubernetes叢集工作環境選擇的快照。"]
 
 
 

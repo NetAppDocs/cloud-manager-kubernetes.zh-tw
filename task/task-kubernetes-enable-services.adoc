@@ -20,4 +20,4 @@ summary: 將託管Kubernetes叢集新增至Canvases之後、您可以使用NetAp
 
 link:https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-kubernetes-backup-to-cloud.html["瞭解如何使用Cloud Backup保護Kubernetes叢集資料"^]。
 
-image:screenshot-kubernetes-backup.png["此頁面的快照Cloud Backup Service 顯示了Kubernetes叢集的五個備份工作。"]
+image:screenshot-k8s-backup.png["此頁面的快照Cloud Backup Service 顯示了Kubernetes叢集的五個備份工作。"]
