@@ -323,16 +323,10 @@
   <block id="79e470c48afbbe1fa9e042e6403d2459" category="doc">開始使用Kubernetes叢集</block>
   <block id="6c5ac2a580024aab98e753e5c4dc264c" category="paragraph">請依照下列步驟快速入門。</block>
   <block id="2fadcb7c66778a6e996282a9d85d69d3" category="paragraph">確保您的環境符合叢集類型的先決條件。</block>
-  <block id="72cf03e83eb761652a0d13086f72c9d7" category="paragraph"><block ref="72cf03e83eb761652a0d13086f72c9d7" category="inline-link-macro-rx"></block></block>
-  <block id="4a485bbe8e1857cd9e015d159f30b24d" category="paragraph"><block ref="4a485bbe8e1857cd9e015d159f30b24d" category="inline-link-macro-rx"></block></block>
-  <block id="a29db47c768f9047aab40d9abfb20adb" category="paragraph"><block ref="a29db47c768f9047aab40d9abfb20adb" category="inline-link-macro-rx"></block></block>
   <block id="822d28ac02a6b0c333bf3eabab847e14" category="paragraph">您可以新增Kubernetes叢集、並使用Cloud Manager將其連線至工作環境。</block>
   <block id="29eef78ab52bc074b0642baafaa44a77" category="inline-link-macro">新增Amazon Kubernetes叢集</block>
-  <block id="1cc3b91ac3f47d8a34620fe828068db4" category="paragraph"><block ref="1cc3b91ac3f47d8a34620fe828068db4" category="inline-link-macro-rx"></block></block>
   <block id="8cae45546ea6e7035e9b798f709fc911" category="inline-link-macro">新增Azure Kubernetes叢集</block>
-  <block id="6ba362adaf84a4c90e3a5e2018f325f2" category="paragraph"><block ref="6ba362adaf84a4c90e3a5e2018f325f2" category="inline-link-macro-rx"></block></block>
   <block id="2872769900c1ca485d1628b4eefde308" category="inline-link-macro">新增Google Cloud Kubernetes叢集</block>
-  <block id="cfc29f6918b9699178c2eb110f408c5c" category="paragraph"><block ref="cfc29f6918b9699178c2eb110f408c5c" category="inline-link-macro-rx"></block></block>
   <block id="c5ea1d5f2f35adec1d872ec686a8c040" category="paragraph">使用原生 Kubernetes 介面和架構來要求及管理持續磁碟區。Cloud Manager 會建立 NFS 和 iSCSI 儲存類別、供您在配置持續磁碟區時使用。</block>
   <block id="fc0f20615e6c250961a9e88b2929444b" category="inline-link-macro">深入瞭解Astra Trident的第一個磁碟區資源配置</block>
   <block id="28eb70a7fd7de45b7957d03e5f3d4554" category="paragraph"><block ref="439da74acd283499ba63209cd4e1e52e" category="inline-link-macro-rx"></block>。</block>
@@ -449,4 +443,23 @@
   <block id="de4e940a00cd2a48720f3f12fb53e9a7" category="paragraph">直接編輯AWS/AUTH ConfigMap、將RBAC存取權限新增至Cloud Manager Connector的IAM角色。</block>
   <block id="434f77de052a92ee529d95ba80f3bab4" category="inline-link">如需完整指示、請參閱AWS EKS文件</block>
   <block id="05dcb2fa0de0a4549322d783d2f5e5fb" category="paragraph"><block ref="7af1dbb48bd59e8f995e1a97be9e70f8" category="inline-link-rx"></block>。</block>
+  <block id="36e8382aa83e74f8ba70303f62ce8d15" category="paragraph"><block ref="36e8382aa83e74f8ba70303f62ce8d15" category="inline-link-macro-rx"></block></block>
+  <block id="8a7acc1f3e4ade2ee389a4e59f39bf28" category="paragraph"><block ref="8a7acc1f3e4ade2ee389a4e59f39bf28" category="inline-link-macro-rx"></block></block>
+  <block id="2bdb06b2a7060e3efbb60c6fdf551284" category="paragraph"><block ref="2bdb06b2a7060e3efbb60c6fdf551284" category="inline-link-macro-rx"></block></block>
+  <block id="187496d0d891ffe76a43f6ffdd995505" category="paragraph"><block ref="187496d0d891ffe76a43f6ffdd995505" category="inline-link-macro-rx"></block></block>
+  <block id="e72a8a52b20d0b466a3152c8c60b4f2b" category="paragraph"><block ref="e72a8a52b20d0b466a3152c8c60b4f2b" category="inline-link-macro-rx"></block></block>
+  <block id="09e2861e1b9bab7606bd9fd36b62d621" category="paragraph"><block ref="09e2861e1b9bab7606bd9fd36b62d621" category="inline-link-macro-rx"></block></block>
+  <block id="e29d7c0b36af68edd13ebac84f15b44b" category="sidebar">雲端供應商</block>
+  <block id="46aef2e5080a5347df1ce7546e1be1df" category="sidebar">所有雲端供應商</block>
+  <block id="6beccc67ff905f7da0b29dece26b0485" category="sidebar">Amazon Web Services</block>
+  <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="sidebar">AWS</block>
+  <block id="56ef2682280ac110060b881925a87b80" category="sidebar">Google Cloud</block>
+  <block id="1668ca1bd914c1d847f23b491319ac91" category="sidebar">Microsoft Azure</block>
+  <block id="3a580f142203677f1f0bc30898f63f53" category="sidebar">Azure</block>
+  <block id="5a81378cdc7edd9ea960cf02d6ca78d2" category="paragraph">ifdef::aws[]</block>
+  <block id="6beb2fa01dc121194547db1bfbe03408" category="paragraph">endif::aws[]</block>
+  <block id="b010c7530103ef9947582474d65ff9a3" category="paragraph">ifdef::azure[]</block>
+  <block id="879701946bb2bc7241d0f85fd843455a" category="paragraph">endif::azure[]</block>
+  <block id="6e1e9c83b80f4d22d34cbdf60a71383b" category="paragraph">ifdef::gcp[]</block>
+  <block id="310c228207a0f8446bbe4c5d16978cb7" category="paragraph">endif::gcp[]</block>
 </blocks>

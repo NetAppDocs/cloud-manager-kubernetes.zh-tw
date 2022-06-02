@@ -25,26 +25,50 @@ summary: 將Kubernetes叢集新增至Cloud Manager、只需幾個快速步驟即
 [role="quick-margin-para"]
 確保您的環境符合叢集類型的先決條件。
 
-[role="quick-margin-para"]
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html["AWS中Kubernetes叢集的需求"^]
+ifdef::aws[]
 
 [role="quick-margin-para"]
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html["Azure中Kubernetes叢集的需求"^]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html["AWS中Kubernetes叢集的需求"]
+
+endif::aws[]
+
+ifdef::azure[]
 
 [role="quick-margin-para"]
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud中Kubernetes叢集的需求"^]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html["Azure中Kubernetes叢集的需求"]
+
+endif::azure[]
+
+ifdef::gcp[]
+
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud中Kubernetes叢集的需求"]
+
+endif::gcp[]
 
 [role="quick-margin-para"]
 您可以新增Kubernetes叢集、並使用Cloud Manager將其連線至工作環境。
 
-[role="quick-margin-para"]
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-aws.html["新增Amazon Kubernetes叢集"^]
+ifdef::aws[]
 
 [role="quick-margin-para"]
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-azure.html["新增Azure Kubernetes叢集"^]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-aws.html["新增Amazon Kubernetes叢集"]
+
+endif::aws[]
+
+ifdef::azure[]
 
 [role="quick-margin-para"]
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-gke.html["新增Google Cloud Kubernetes叢集"^]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-azure.html["新增Azure Kubernetes叢集"]
+
+endif::azure[]
+
+ifdef::gcp[]
+
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-gke.html["新增Google Cloud Kubernetes叢集"]
+
+endif::gcp[]
 
 [role="quick-margin-para"]
 使用原生 Kubernetes 介面和架構來要求及管理持續磁碟區。Cloud Manager 會建立 NFS 和 iSCSI 儲存類別、供您在配置持續磁碟區時使用。
