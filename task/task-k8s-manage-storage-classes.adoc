@@ -17,7 +17,7 @@ summary: 將託管Kubernetes叢集新增至Canvas之後、您可以使用Cloud M
 將託管Kubernetes叢集新增至Canvas之後、您可以使用Cloud Manager來管理儲存類別。
 
 
-NOTE: 如果未定義儲存類別、叢集將顯示需要採取行動。按兩下Canvas上的叢集、將會開啟動作頁面以新增儲存類別。
+NOTE: 如果未定義儲存類別、叢集將顯示需要採取行動。按兩下畫版上的叢集、會開啟動作頁面以新增儲存類別。
 
 
 
