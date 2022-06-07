@@ -51,7 +51,7 @@ Cloud Manager支援在下列環境中執行的託管Kubernetes叢集：
 
 == 支援的後端儲存設備
 
-NetApp的Astra Trident必須安裝在每個Kubernetes叢集上、Cloud Volumes ONTAP 而且必須將其設定為叢集的後端儲存設備。
+NetApp的Astra Trident必須安裝在每個Kubernetes叢集上、Cloud Volumes ONTAP 且必須ONTAP 將適用於該叢集的支援功能設定為後端儲存設備。
 
 
 

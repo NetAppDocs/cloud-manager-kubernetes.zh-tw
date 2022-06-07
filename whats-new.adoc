@@ -18,6 +18,12 @@ summary: 瞭解Cloud Manager Kubernetes的新功能。
 
 
 
+== 2022年6月6日
+
+Cloud Manager現在支援Amazon FSX ONTAP 作為後端儲存設備。
+
+
+
 == 2022年5月4日
 
 
