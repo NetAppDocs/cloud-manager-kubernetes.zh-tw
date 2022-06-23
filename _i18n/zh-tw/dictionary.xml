@@ -463,4 +463,8 @@
   <block id="62ee9336109ed1c4538423613b856682" category="section-title">2022年6月6日</block>
   <block id="cd6d587cb36421715f3cc24a2c91aef6" category="paragraph">Cloud Manager現在支援Amazon FSX ONTAP 作為後端儲存設備。</block>
   <block id="f0b34badcd6be375b0501deb67b70346" category="paragraph">NetApp的Astra Trident必須安裝在每個Kubernetes叢集上、Cloud Volumes ONTAP 且必須ONTAP 將適用於該叢集的支援功能設定為後端儲存設備。</block>
+  <block id="624105df248e28f049a2f58eb3552d40" category="list-text">EC2：取消註冊</block>
+  <block id="b272876bb8d27e636bb70f2dce15cb34" category="list-text">EKS：清單叢集</block>
+  <block id="457a1b6178515d282232753f808e8cf5" category="list-text">EKS：取消叢集</block>
+  <block id="53ac904630fdbb4d62f208e001934c7c" category="list-text">IAM：GetInstanceProfile</block>
 </blocks>

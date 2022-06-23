@@ -69,12 +69,12 @@ image:screenshot-aws-edit-policy.png["AWS主控台的快照、顯示「權限」
 
 . 按一下「* JSON*」、然後在第一組動作下新增下列權限：
 +
-[source, json]
-----
-"eks:ListClusters",
-"eks:DescribeCluster,"
-"iam:GetInstanceProfile"
-----
+** EC2：取消註冊
+** EKS：清單叢集
+** EKS：取消叢集
+** IAM：GetInstanceProfile
+
+
 +
 https://occm-sample-policies.s3.amazonaws.com/Policy_for_Cloud_Manager_3.9.13.json["檢視原則的完整Json格式"^]。
 
