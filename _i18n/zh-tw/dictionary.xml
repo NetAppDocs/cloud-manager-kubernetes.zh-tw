@@ -49,8 +49,6 @@
   <block id="d202d8021b40bfbe11235a5a65c0fe8c" category="inline-link-macro">深入瞭解 Trident</block>
   <block id="4f63c1d4acd536bd5b9a9745d3f20e7b" category="paragraph">Astra Trident是由NetApp維護的完全支援開放原始碼專案。Astra Trident與Kubernetes及其持續Volume架構原生整合、可從執行任何NetApp儲存平台組合的系統無縫配置及管理Volume。 <block ref="dd2206fc656d0a859de4039d89433dfe" category="inline-link-macro-rx"></block>。</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">功能</block>
-  <block id="ce13beab50b67927b1103252e965db42" category="paragraph">您可以使用Cloud Manager直接管理Kubernetes叢集。</block>
-  <block id="9e2a7f44aa27cc7ead915762de91e605" category="list-text">安裝Astra Trident。</block>
   <block id="3e1566822574596f61c1fe009087856e" category="list-text">新增及管理叢集、做為混合雲基礎架構的一部分。</block>
   <block id="aa6e96555ed26ef1dcb622e5b13653ae" category="list-text">新增及管理儲存類別、並將其連線至工作環境。</block>
   <block id="d59a7b1b3d81013cb6befe124b4da534" category="list-text">使用Cloud Backup Service 還原備份持續的Volume。</block>
@@ -61,7 +59,6 @@
   <block id="974030a30a48754684d05541fd5e96c9" category="inline-link-macro">Google Kubernetes Engine（GKE）</block>
   <block id="213acaa88814071409958acdc9192518" category="section-title">支援的Astra Trident部署</block>
   <block id="22d8ff517038ce2f90897c500f9ea50f" category="inline-link-macro">檢閱先決條件</block>
-  <block id="e244dca7cd711ef2b227bcd422cd641e" category="paragraph">需要最新版Astra Trident的四種版本之一。您可以直接從Cloud Manager安裝Astra Trident。您應該 <block ref="8da0f2411c72d1a5ebe475af99243801" category="inline-link-macro-rx"></block> 安裝之前。</block>
   <block id="74347238ab27b50c48fd1aa9e68844e4" category="inline-link-macro">與營運者一起升級</block>
   <block id="7c0e36f1a9c7af2d74760d191974b0e0" category="paragraph">若要升級Astra Trident、 <block ref="67d80849aeaf50fe569386f344ed4725" category="inline-link-macro-rx"></block>。</block>
   <block id="c9ece1f2227c56942142d90092ca7fd2" category="section-title">支援的後端儲存設備</block>
@@ -128,7 +125,6 @@
   <block id="6e7cef0ef9634162a88caaa29c694893" category="paragraph"><block ref="6e7cef0ef9634162a88caaa29c694893" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0a7f3527cff1099d537e438e6d62de3f" category="paragraph">您可以從資源頁面：</block>
   <block id="ae98d4fcb6e8e5720784f6c4936d3fda" category="list-text">檢視Kubernetes叢集狀態。</block>
-  <block id="ae0592ef5303fb9aef624fe7d88c9df0" category="list-text">確認已安裝Astra Trident。請參閱 <block ref="1a59dd77a0d64111faec261144239ca1" category="inline-link-macro-rx"></block>。</block>
   <block id="e8b9c3a9859a62e9a58431c3b61f75d5" category="inline-link-macro">管理儲存類別</block>
   <block id="37b5997855958384cd2d8f88d0ea2dd5" category="list-text">新增及移除儲存類別。請參閱 <block ref="b3baecb7f739f8467c020eefaf640928" category="inline-link-macro-rx"></block>。</block>
   <block id="642589473fadbb6740e9f7d1a3850cf1" category="list-text">檢視持續磁碟區。請參閱 <block ref="5d330c78fdbd034ad3466dadfcb8a623" category="inline-link-macro-rx"></block>。</block>
@@ -283,8 +279,6 @@
   <block id="6867d56501a1639e8de0328e96a5d354" category="list-text">如果未安裝Astra Trident、請按一下*安裝Trident *。</block>
   <block id="7c729d1891ae54bb841ac8551a0cc665" category="inline-image-macro">K8s資源頁面的快照、顯示沒有Astra Trident安裝及用於安裝Astra Trident的按鈕。</block>
   <block id="fca8d7d1d460e9d7e376d9a8c0436a56" category="paragraph"><block ref="fca8d7d1d460e9d7e376d9a8c0436a56" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="607bff952f97786985d5316831fa1fa1" category="inline-link">如需升級步驟、請前往Astra Trident文件</block>
-  <block id="964778d2cea436fcbfab23500ba508d3" category="list-text">如果安裝Astra Trident的後端版本、<block ref="7750d0e2469b3c9ff5677b5c3166bd8d" category="inline-link-rx"></block>。</block>
   <block id="b856d54eb2c982baae9beda550a3c6e4" category="inline-image-macro">Astra Trident升級程序的快照。</block>
   <block id="fd007b3e14f8b08692b19f1bf6b9ae5b" category="paragraph"><block ref="fd007b3e14f8b08692b19f1bf6b9ae5b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5af4fd067fdcfc2366829de01d0a1fe4" category="paragraph">安裝最新版的Astra Trident。您現在可以新增儲存類別。</block>
@@ -333,7 +327,6 @@
   <block id="35cbaff5433d00a9b082ae5c280b5e9e" category="paragraph"><block ref="35cbaff5433d00a9b082ae5c280b5e9e" category="inline-link-macro-rx"></block></block>
   <block id="c51edbd9644671669f8a6fc9bdfe66fe" category="summary">將託管Kubernetes叢集新增至Canvases之後、您可以使用NetApp雲端資料服務來進行進階資料管理。</block>
   <block id="7c3dba5dcfefe7c148fb75a35249f81c" category="doc">將NetApp雲端資料服務與Kubernetes叢集搭配使用</block>
-  <block id="88115501de56483f3bf8dd5514ce1d84" category="paragraph">目前、Kubernetes叢集支援Cloud Backup。您可以使用Cloud Backup將持續磁碟區備份到物件儲存設備。</block>
   <block id="7f502b44c9ac6d1d030af7019328b0f2" category="inline-link-macro">瞭解如何使用Cloud Backup保護Kubernetes叢集資料</block>
   <block id="608303aeee3cf05fa80edbe0bfe6fa7f" category="paragraph"><block ref="6bac3e672a275b3f2755f168dc31fbab" category="inline-link-macro-rx"></block>。</block>
   <block id="a0d9f3ae32f1b7df23e0071308b6cbe5" category="inline-image-macro">此頁面的快照Cloud Backup Service 顯示了Kubernetes叢集的五個備份工作。</block>
@@ -374,7 +367,6 @@
   <block id="86a5f92314f48ea7dfb3565a2752a76d" category="paragraph"><block ref="86a5f92314f48ea7dfb3565a2752a76d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6063d5ed0fa76ced94f0f7adbbd7b833" category="paragraph">Kubernetes叢集會從工作區中移除、且在Canvas上不再顯示。</block>
   <block id="b0c3c99bdd45282a0907b14337e167d0" category="summary">將託管Kubernetes叢集新增至Canvases之後、您可以使用Cloud Manager來檢視連接的持續磁碟區。</block>
-  <block id="ca264d2d0523bcea1c8aa70735414da1" category="paragraph">將託管Kubernetes叢集新增至Canvases之後、您可以使用Cloud Manager來檢視持續的Volume。</block>
   <block id="89c3bcf0ecc1114f8d19734d9156cb40" category="inline-link-macro">資源配置</block>
   <block id="fcba6012c777a16b10bc3866ceb75c1c" category="list-text">按一下「*總覽*」標籤中的「*檢視磁碟區*」、或按一下「*持續磁碟區*」標籤。如果未設定任何持續磁碟區、請參閱 <block ref="8ea547c8e5046e3bbfaab0e05145f9ac" category="inline-link-macro-rx"></block> 如需Astra Trident中資源配置磁碟區的詳細資訊、</block>
   <block id="3a84970eaeee39d237d01aa9a3807a56" category="paragraph">此時會顯示已設定的持續磁碟區表格。</block>
@@ -424,7 +416,6 @@
   <block id="0f808082ee99c2acfbcb1661162034f6" category="paragraph">您現在可以將Kubernetes叢集拖放到Cloud Volumes ONTAP 運作環境中、直接從Canvas.新增儲存類別。</block>
   <block id="d23895cd28f2e8e5d3074279cea7aacf" category="inline-link-macro">新增儲存類別</block>
   <block id="2556925e0b340fdd647987c6af7fbee9" category="paragraph"><block ref="2556925e0b340fdd647987c6af7fbee9" category="inline-link-macro-rx"></block></block>
-  <block id="a5cc9f7714a0767ece3c08caff06314d" category="list-text">從「畫版」中、將Kubernetes工作環境拖放到Cloud Volumes ONTAP 「支援」工作環境中、以開啟儲存類別精靈。</block>
   <block id="19f4ed17c6ec00f67063b70e40bfc661" category="section-title">2022年5月4日</block>
   <block id="79ee39f20c9b076e39473401e33c5f12" category="list-text"><block ref="79ee39f20c9b076e39473401e33c5f12" category="inline-link-macro-rx"></block></block>
   <block id="df02ebf4bbdbd23dcf4001f89e193718" category="list-text"><block ref="df02ebf4bbdbd23dcf4001f89e193718" category="inline-link-macro-rx"></block></block>
@@ -462,9 +453,38 @@
   <block id="61d60f1794bd3201467c51134b8ed076" category="sidebar">Kubernetes叢集文件</block>
   <block id="62ee9336109ed1c4538423613b856682" category="section-title">2022年6月6日</block>
   <block id="cd6d587cb36421715f3cc24a2c91aef6" category="paragraph">Cloud Manager現在支援Amazon FSX ONTAP 作為後端儲存設備。</block>
-  <block id="f0b34badcd6be375b0501deb67b70346" category="paragraph">NetApp的Astra Trident必須安裝在每個Kubernetes叢集上、Cloud Volumes ONTAP 且必須ONTAP 將適用於該叢集的支援功能設定為後端儲存設備。</block>
   <block id="624105df248e28f049a2f58eb3552d40" category="list-text">EC2：取消註冊</block>
   <block id="b272876bb8d27e636bb70f2dce15cb34" category="list-text">EKS：清單叢集</block>
   <block id="457a1b6178515d282232753f808e8cf5" category="list-text">EKS：取消叢集</block>
   <block id="53ac904630fdbb4d62f208e001934c7c" category="list-text">IAM：GetInstanceProfile</block>
+  <block id="1511b856d0328cfba458b8f83c2e94e3" category="section-title">2022年7月3日</block>
+  <block id="3b5790878c6505820d5eed0428e827bb" category="list-text">如果使用Trident營運者部署了Astra Trident、您現在可以使用Cloud Manager升級至最新版的Astra Trident。</block>
+  <block id="26317664fb1c4e8b3a500a7b1e46a4e7" category="inline-link-macro">安裝及管理Astra Trident</block>
+  <block id="74f5fa93248faf352ebad3f966bf3b55" category="paragraph"><block ref="74f5fa93248faf352ebad3f966bf3b55" category="inline-link-macro-rx"></block></block>
+  <block id="412d8f1a8f03a7ee8f0983e7ecafe5e4" category="list-text">您現在可以將Kubernetes叢集拖放到AWS FSX for ONTAP the Sfor the Sfor the fernet工作環境中、直接從Canvas.新增儲存類別。</block>
+  <block id="dca6eb143add599a09927bb847b151a0" category="paragraph">您可以使用Cloud Manager來安裝或升級Astra Trident、設定儲存類別、移除叢集、以及啟用資料服務。</block>
+  <block id="0afcf081ea15d779a90d2cd48eb66c62" category="inline-link-macro">使用「tridentctl」解除安裝</block>
+  <block id="b6f2a65b5d8cda52b65468f1121cccbe" category="inline-link-macro">使用Trident運算子</block>
+  <block id="0b721a23fd75724e1615d73169bdc191" category="inline-link-macro">使用Cloud Manager</block>
+  <block id="b79994fe01210c42b796175485bb4dd6" category="admonition">不支援使用「tridentctl」部署的Astra Trident。如果您使用「tridentctl」部署Astra Trident、就無法使用Cloud Manager來管理Kubernetes叢集。您必須 <block ref="8c87d008a6e4f85ed690efd4249af106" category="inline-link-macro-rx"></block> 並重新安裝 <block ref="47df2f698ba12609a6e06bab6dbff5ef" category="inline-link-macro-rx"></block> 或 <block ref="85348316fdb8fa01385efced6d696001" category="inline-link-macro-rx"></block>。</block>
+  <block id="7bf320596331b39277fe4c33b233a4de" category="list-text">確認已安裝相容版本的Astra Trident、或升級至最新版的Astra Trident。請參閱 <block ref="1a59dd77a0d64111faec261144239ca1" category="inline-link-macro-rx"></block>。</block>
+  <block id="8a440e2f0002d0e1d32d98b9306cc520" category="paragraph">使用使用Trident營運者部署的相容版本Astra Trident、您可以使用Cloud Manager直接管理Kubernetes叢集。</block>
+  <block id="3a6729951b75ba10964e07a3b4768c91" category="list-text">安裝或升級Astra Trident。</block>
+  <block id="510a1dab177e7ff08d50b9ab0588f804" category="inline-link-macro">使用Trident運算子進行部署</block>
+  <block id="8f13bd8ba84d92d65e6ae6ebc5f6263e" category="paragraph">Astra Trident的四個最新版本之一 <block ref="8da7bbab7c5d8930c9f1dd2985917853" category="inline-link-macro-rx"></block> 為必填項目。</block>
+  <block id="f996f1e5efc39c670ff915fc9d943003" category="paragraph">您可以直接從Cloud Manager安裝或升級至最新版的Astra Trident。</block>
+  <block id="301f4e6b65ae846f84074dd048ca5b79" category="inline-link-macro">檢閱Astra Trident的先決條件</block>
+  <block id="a4505b3bac04e5dbfea022e8773b5c49" category="paragraph"><block ref="a4505b3bac04e5dbfea022e8773b5c49" category="inline-link-macro-rx"></block></block>
+  <block id="8e932625bb22cba770e5b9207060175a" category="paragraph">NetApp Astra Trident必須安裝在每個Kubernetes叢集上、Cloud Volumes ONTAP 且必須ONTAP 將適用於此功能的EFlash或Amazon FSX設定為叢集的後端儲存設備。</block>
+  <block id="0ac90977d5b6ae148c50051e3f031a9b" category="paragraph">將受管理的Kubernetes叢集新增至Canvas之後、您可以使用Cloud Manager來檢視持續磁碟區。</block>
+  <block id="7f8f877fa4939cb32935643877781afc" category="paragraph">將受管理的Kubernetes叢集新增至Canvas之後、您可以使用Cloud Manager從工作區移除叢集。</block>
+  <block id="d6bbc73a6086ac314349118e0d0d4de3" category="paragraph">將託管Kubernetes叢集新增至Canvases之後、您就可以使用NetApp雲端資料服務來進行進階資料管理。</block>
+  <block id="9db5c72d5e9592f882f48324ae18d47c" category="paragraph">您可以使用Cloud Backup將持續磁碟區備份到物件儲存設備。</block>
+  <block id="62286cd48d8328138c2c4d1b71e6fe45" category="doc">安裝或升級Astra Trident</block>
+  <block id="81c34c7be19c27f73849b633ad0a25a4" category="paragraph">將受管理的Kubernetes叢集新增至Canvased之後、您可以使用Cloud Manager確認相容的Astra Trident安裝、或是安裝或升級Astra Trident至最新版本。</block>
+  <block id="fa68a0b3b7640ba4bb770d375598b4b6" category="list-text">需要使用Trident運算子（手動或使用Helm圖表）部署的Astra Trident四個最新版本之一。</block>
+  <block id="f4e971189f53aa07fda04f30d730f2b4" category="list-text">不支援使用「tridentctl」部署的Astra Trident。如果您使用「tridentctl」部署Astra Trident、就無法使用Cloud Manager來管理Kubernetes叢集。您必須 <block ref="8c87d008a6e4f85ed690efd4249af106" category="inline-link-macro-rx"></block> 並重新安裝 <block ref="47df2f698ba12609a6e06bab6dbff5ef" category="inline-link-macro-rx"></block> 或使用下列步驟。</block>
+  <block id="7d3743c0dc40fd5a7d78e22b9d4f94d4" category="list-text">如果安裝了不受支援的Astra Trident版本、請按一下*升級Trident *。</block>
+  <block id="9a0e220ebe1a9271b56057d3ae4b2a8f" category="paragraph">將受管理的Kubernetes叢集新增至Canvases之後、您可以使用Cloud Manager來管理儲存類別。</block>
+  <block id="319a42bc8932c7d4f9387e0c5de9c64c" category="list-text">從Canvas,將Kubernetes工作環境拖放到Cloud Volumes ONTAP 支援ONTAP 動作環境的支援區或Amazon FSX來開啟儲存類別精靈。</block>
 </blocks>

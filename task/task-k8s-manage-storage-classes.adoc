@@ -14,7 +14,7 @@ summary: 將託管Kubernetes叢集新增至Canvas之後、您可以使用Cloud M
 
 
 [role="lead"]
-將託管Kubernetes叢集新增至Canvas之後、您可以使用Cloud Manager來管理儲存類別。
+將受管理的Kubernetes叢集新增至Canvases之後、您可以使用Cloud Manager來管理儲存類別。
 
 
 NOTE: 如果未定義儲存類別、叢集將顯示需要採取行動。按兩下畫版上的叢集、會開啟動作頁面以新增儲存類別。
@@ -24,7 +24,7 @@ NOTE: 如果未定義儲存類別、叢集將顯示需要採取行動。按兩�
 == 新增儲存類別
 
 .步驟
-. 從「畫版」中、將Kubernetes工作環境拖放到Cloud Volumes ONTAP 「支援」工作環境中、以開啟儲存類別精靈。
+. 從Canvas,將Kubernetes工作環境拖放到Cloud Volumes ONTAP 支援ONTAP 動作環境的支援區或Amazon FSX來開啟儲存類別精靈。
 . 提供儲存類別的名稱、選取定義選項、然後按一下*下一步*。
 +
 image:screenshot-k8s-define-storage-class.png["顯示K8s儲存類別定義選項的快照。"]

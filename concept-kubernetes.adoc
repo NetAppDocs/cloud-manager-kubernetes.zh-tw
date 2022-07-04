@@ -20,9 +20,9 @@ Astra Trident是由NetApp維護的完全支援開放原始碼專案。Astra Trid
 
 == 功能
 
-您可以使用Cloud Manager直接管理Kubernetes叢集。
+使用使用Trident營運者部署的相容版本Astra Trident、您可以使用Cloud Manager直接管理Kubernetes叢集。
 
-* 安裝Astra Trident。
+* 安裝或升級Astra Trident。
 * 新增及管理叢集、做為混合雲基礎架構的一部分。
 * 新增及管理儲存類別、並將其連線至工作環境。
 * 使用Cloud Backup Service 還原備份持續的Volume。
@@ -43,15 +43,17 @@ Cloud Manager支援在下列環境中執行的託管Kubernetes叢集：
 
 == 支援的Astra Trident部署
 
-需要最新版Astra Trident的四種版本之一。您可以直接從Cloud Manager安裝Astra Trident。您應該 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["檢閱先決條件"^] 安裝之前。
+Astra Trident的四個最新版本之一 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["使用Trident運算子進行部署"^] 為必填項目。
 
-若要升級Astra Trident、 link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/upgrade-operator.html["與營運者一起升級"^]。
+您可以直接從Cloud Manager安裝或升級至最新版的Astra Trident。
+
+link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["檢閱Astra Trident的先決條件"^]
 
 
 
 == 支援的後端儲存設備
 
-NetApp的Astra Trident必須安裝在每個Kubernetes叢集上、Cloud Volumes ONTAP 且必須ONTAP 將適用於該叢集的支援功能設定為後端儲存設備。
+NetApp Astra Trident必須安裝在每個Kubernetes叢集上、Cloud Volumes ONTAP 且必須ONTAP 將適用於此功能的EFlash或Amazon FSX設定為叢集的後端儲存設備。
 
 
 

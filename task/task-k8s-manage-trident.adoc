@@ -4,7 +4,7 @@ permalink: /task/task-k8s-manage-trident.html
 keywords: kubernetes, k8s, install astra trident, kubernetes support 
 summary: 將託管Kubernetes叢集新增至Canvas之後、您可以使用Cloud Manager確認相容的Astra Trident安裝、或是安裝Astra Trident。需要最新版Astra Trident的四種版本之一。 
 ---
-= 安裝Astra Trident
+= 安裝或升級Astra Trident
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,12 +14,17 @@ summary: 將託管Kubernetes叢集新增至Canvas之後、您可以使用Cloud M
 
 
 [role="lead"]
-將託管Kubernetes叢集新增至Canvas之後、您可以使用Cloud Manager確認相容的Astra Trident安裝、或是安裝Astra Trident。需要最新版Astra Trident的四種版本之一。
+將受管理的Kubernetes叢集新增至Canvased之後、您可以使用Cloud Manager確認相容的Astra Trident安裝、或是安裝或升級Astra Trident至最新版本。
 
+[NOTE]
+====
+* 如果未安裝Astra Trident、或安裝不相容版本的Astra Trident、叢集會顯示需要採取行動。
+* 需要使用Trident運算子（手動或使用Helm圖表）部署的Astra Trident四個最新版本之一。
+* 不支援使用「tridentctl」部署的Astra Trident。如果您使用「tridentctl」部署Astra Trident、就無法使用Cloud Manager來管理Kubernetes叢集。您必須 link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/uninstall-trident.html#uninstall-by-using-tridentctl["使用「tridentctl」解除安裝"^] 並重新安裝 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["使用Trident運算子"^] 或使用下列步驟。
+
+
+====
 若要深入瞭解Astra Trident、請參閱 link:https://docs.netapp.com/us-en/trident/index.html["Astra Trident文件"^]。
-
-
-NOTE: 如果未安裝Astra Trident、或安裝不相容版本的Astra Trident、叢集會顯示需要採取行動。
 
 .步驟
 . 按兩下Canvas上的Kubernetes工作環境、或按一下*輸入工作環境*。
@@ -28,7 +33,7 @@ NOTE: 如果未安裝Astra Trident、或安裝不相容版本的Astra Trident、
 +
 image:screenshot-k8s-install-trident.png["K8s資源頁面的快照、顯示沒有Astra Trident安裝及用於安裝Astra Trident的按鈕。"]
 
-.. 如果安裝Astra Trident的後端版本、 https://docs.netapp.com/us-en/trident/trident-managing-k8s/upgrade-trident.html["如需升級步驟、請前往Astra Trident文件"^]。
+.. 如果安裝了不受支援的Astra Trident版本、請按一下*升級Trident *。
 +
 image:screenshot-k8s-upgrade-trident.png["Astra Trident升級程序的快照。"]
 

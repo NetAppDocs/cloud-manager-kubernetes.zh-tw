@@ -14,7 +14,7 @@ summary: 將託管Kubernetes叢集新增至Canvas之後、您可以使用Cloud M
 
 
 [role="lead"]
-將託管Kubernetes叢集新增至Canvas之後、您可以使用Cloud Manager從工作區移除叢集。
+將受管理的Kubernetes叢集新增至Canvas之後、您可以使用Cloud Manager從工作區移除叢集。
 
 .步驟
 . 按兩下Canvas上的Kubernetes工作環境、或按一下*輸入工作環境*。

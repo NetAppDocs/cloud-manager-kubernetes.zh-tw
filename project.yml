@@ -58,7 +58,7 @@ sidebar:
   - title: 管理Kubernetes叢集
     url: "/concept-manage-k8s.html"
     entries:
-    - title: 安裝Astra Trident
+    - title: 安裝或升級Astra Trident
       url: "/task/task-k8s-manage-trident.html"
     - title: 管理儲存類別
       url: "/task/task-k8s-manage-storage-classes.html"

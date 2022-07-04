@@ -13,7 +13,10 @@ summary: 您可以使用Cloud Manager來安裝Astra Trident、設定儲存類別
 :imagesdir: ./media/
 
 
-您可以使用Cloud Manager來安裝Astra Trident、設定儲存類別、移除叢集、以及啟用資料服務。
+您可以使用Cloud Manager來安裝或升級Astra Trident、設定儲存類別、移除叢集、以及啟用資料服務。
+
+
+NOTE: 不支援使用「tridentctl」部署的Astra Trident。如果您使用「tridentctl」部署Astra Trident、就無法使用Cloud Manager來管理Kubernetes叢集。您必須 link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/uninstall-trident.html#uninstall-by-using-tridentctl["使用「tridentctl」解除安裝"^] 並重新安裝 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["使用Trident運算子"^] 或 link:./tasks/task-k8s-manage-trident.html["使用Cloud Manager"]。
 
 
 
@@ -26,7 +29,7 @@ image:screenshot-k8s-resource-page.png["Kubernetes資源頁面的快照、顯示
 您可以從資源頁面：
 
 * 檢視Kubernetes叢集狀態。
-* 確認已安裝Astra Trident。請參閱 link:./task/task-k8s-manage-trident.html["安裝Astra Trident"]。
+* 確認已安裝相容版本的Astra Trident、或升級至最新版的Astra Trident。請參閱 link:./task/task-k8s-manage-trident.html["安裝Astra Trident"]。
 * 新增及移除儲存類別。請參閱 link:./task/task-k8s-manage-storage-classes.html["管理儲存類別"]。
 * 檢視持續磁碟區。請參閱 link:./task/task-k8s-manage-persistent-volumes.html["檢視持續磁碟區"]。
 * 從工作區移除Kubernetes叢集。請參閱 link:./task/task-k8s-manage-remove-cluster.html["移除叢集"]。

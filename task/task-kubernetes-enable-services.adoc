@@ -14,9 +14,9 @@ summary: 將託管Kubernetes叢集新增至Canvases之後、您可以使用NetAp
 
 
 [role="lead"]
-將託管Kubernetes叢集新增至Canvases之後、您可以使用NetApp雲端資料服務來進行進階資料管理。
+將託管Kubernetes叢集新增至Canvases之後、您就可以使用NetApp雲端資料服務來進行進階資料管理。
 
-目前、Kubernetes叢集支援Cloud Backup。您可以使用Cloud Backup將持續磁碟區備份到物件儲存設備。
+您可以使用Cloud Backup將持續磁碟區備份到物件儲存設備。
 
 link:https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-kubernetes-backup-to-cloud.html["瞭解如何使用Cloud Backup保護Kubernetes叢集資料"^]。
 

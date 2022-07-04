@@ -18,6 +18,20 @@ summary: 瞭解Cloud Manager Kubernetes的新功能。
 
 
 
+== 2022年7月3日
+
+* 如果使用Trident營運者部署了Astra Trident、您現在可以使用Cloud Manager升級至最新版的Astra Trident。
++
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html["安裝及管理Astra Trident"]
+
+* 您現在可以將Kubernetes叢集拖放到AWS FSX for ONTAP the Sfor the Sfor the fernet工作環境中、直接從Canvas.新增儲存類別。
++
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["新增儲存類別"]
+
+
+
+
+
 == 2022年6月6日
 
 Cloud Manager現在支援Amazon FSX ONTAP 作為後端儲存設備。
