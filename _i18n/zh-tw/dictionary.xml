@@ -222,7 +222,6 @@
   <block id="c933a937af3266562155099a4ad44e14" category="paragraph"><block ref="c933a937af3266562155099a4ad44e14" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f96de5b5f8572ecb3c2c80e8156181f8" category="list-text">按一下「* JSON*」、然後在第一組動作下新增下列權限：</block>
   <block id="e72ae7637ee4c3c3135530cf7abf3ea9" category="inline-link">檢視原則的完整Json格式</block>
-  <block id="377d2375cdf41d8fe094ff8bcedcb12b" category="paragraph"><block ref="8eeee6ade5612bec522e249ee65dc7db" category="inline-link-rx"></block>。</block>
   <block id="e42b9312c7c895b2124ac455c7ffecd4" category="list-text">按一下「*檢閱原則*」、然後按一下「*儲存變更*」。</block>
   <block id="def71c390b8b392e82f82a11e649e278" category="paragraph">提供這種連線能力的最簡單方法、就是將Connector和Cloud Volumes ONTAP Sfor部署在Kubernetes叢集所在的VPC上。否則、您需要在不同的VPC之間設定VPC對等連線。</block>
   <block id="c748724ab2608f12017a5f5009be806c" category="inline-image-macro">EKS Kubernetes叢集的架構圖、以及它與Cloud Volumes ONTAP 同一VPC中的連接器和鏈路的連接。</block>
@@ -487,4 +486,5 @@
   <block id="7d3743c0dc40fd5a7d78e22b9d4f94d4" category="list-text">如果安裝了不受支援的Astra Trident版本、請按一下*升級Trident *。</block>
   <block id="9a0e220ebe1a9271b56057d3ae4b2a8f" category="paragraph">將受管理的Kubernetes叢集新增至Canvases之後、您可以使用Cloud Manager來管理儲存類別。</block>
   <block id="319a42bc8932c7d4f9387e0c5de9c64c" category="list-text">從Canvas,將Kubernetes工作環境拖放到Cloud Volumes ONTAP 支援ONTAP 動作環境的支援區或Amazon FSX來開啟儲存類別精靈。</block>
+  <block id="622535c1c45bf857c104b24a29a940e1" category="paragraph"><block ref="622535c1c45bf857c104b24a29a940e1" category="inline-link-rx"></block></block>
 </blocks>
